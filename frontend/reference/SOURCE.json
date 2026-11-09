@@ -1,0 +1,24 @@
+{
+  "source": "smartspace-gesture.zip",
+  "mediapipe": "@mediapipe/hands 0.4.1675469240",
+  "files": [
+    {
+      "file": "vision.js",
+      "original_sha256": "94e42b5e03b102f25df59c00ce8c349293186d6a43bcbb391bd2ca30da8b5ad3",
+      "deployed_sha256": "165aab4d10c15ffff2a453dc3048abfb141cde4416df64937141735d903e6458",
+      "adaptation": "Local MediaPipe asset URL only"
+    },
+    {
+      "file": "gestures.js",
+      "original_sha256": "1e48adbc2146b8fde7b4132813aa825935c33dfe3a398b7beba85fc2daddb79d",
+      "deployed_sha256": "1e48adbc2146b8fde7b4132813aa825935c33dfe3a398b7beba85fc2daddb79d",
+      "adaptation": "None"
+    },
+    {
+      "file": "input.js",
+      "original_sha256": "aa6339f2ef34dd55ced8008ba5105370f55cf09561d4c4eb63271b9a4606eafd",
+      "deployed_sha256": "aa6339f2ef34dd55ced8008ba5105370f55cf09561d4c4eb63271b9a4606eafd",
+      "adaptation": "None"
+    }
+  ]
+}

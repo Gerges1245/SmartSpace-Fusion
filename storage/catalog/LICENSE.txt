@@ -1,0 +1,4 @@
+Models and included textures: Poly Haven contributors, CC0 1.0.
+https://polyhaven.com/license
+https://creativecommons.org/publicdomain/zero/1.0/
+See catalog.json for individual source URLs.

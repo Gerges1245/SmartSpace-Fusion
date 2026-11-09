@@ -1,0 +1,1 @@
+﻿{"name":"three","version":"0.180.0","private":true,"type":"module","exports":{".":"./three.module.min.js","./addons/*":"./*"}}

@@ -1,0 +1,4 @@
+/* Alternate studio identity, selected automatically from the detected profile. */
+body.feminine,body.studio-open.feminine{--bg:#f7edf2;--panel:#fffafd;--ink:#452c40;--muted:#715365;--line:#c7aaba;--accent:#913963;--on-accent:#ffffff;--danger:#aa293c;--viewport-bg:#cdb8c6;--preview-bg:#f0e2eb;--green:#367253}
+body.feminine.dark,body.studio-open.feminine.dark{--bg:#251c29;--panel:#352839;--ink:#fff1f9;--muted:#dbc1d3;--line:#967b91;--accent:#f4afd4;--on-accent:#3c1931;--danger:#ffb6c3;--viewport-bg:#49364b;--preview-bg:#513c51;--green:#a9d7bb}
+body.feminine .brand svg{width:36px;height:36px}body.feminine .room-workspace,body.feminine .studio-side{border-radius:22px 22px 12px 12px}body.feminine .project-heading h1{font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:500}body.feminine .studio-kicker{color:var(--accent)}body.feminine .piece-marker{border-radius:50%}body.feminine .entry h1{font-family:Georgia,serif;font-weight:500}

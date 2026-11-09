@@ -1,0 +1,10 @@
+﻿import assert from 'node:assert/strict';
+import {mountKeyboardControls} from '../frontend/mouse-control.js';
+let listener;const commands=[];
+globalThis.document={querySelector:()=>null,addEventListener:(name,fn)=>listener=fn,removeEventListener(){}};
+mountKeyboardControls({active:()=>true,busy:()=>false,dirty:()=>false,save(){},dispatch:c=>commands.push(c),switchPanel(){}});
+const event=key=>({key,target:{closest:()=>null,matches:()=>false},preventDefault(){}});
+listener(event('L'));listener(event('t'));assert.deepEqual(commands,['panel:library','panel:objects']);
+listener({...event('l'),ctrlKey:true});assert.equal(commands.length,2,'Ctrl+L belongs to the browser');
+listener({...event('l'),target:{closest:()=>({}),matches:()=>false}});assert.equal(commands.length,2,'typing must not activate panel shortcuts');
+console.log('Library/controls shortcuts, browser modifier preservation and text-input guards passed.');

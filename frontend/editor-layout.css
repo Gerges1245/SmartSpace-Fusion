@@ -1,0 +1,111 @@
+/* The studio occupies the screen. Only its independent lists may scroll. */
+body.studio-open{height:100dvh;overflow:hidden;overscroll-behavior:none}
+body.studio-open #app{height:100%;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+body.studio-open #app>header{flex:0 0 60px;height:60px;min-height:60px;padding:8px 16px;flex-wrap:nowrap;gap:12px;min-width:0}
+body.studio-open .header-actions{flex-wrap:nowrap;min-width:0;gap:10px}
+body.studio-open .connected-user{max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.studio-open .studio{flex:1;min-height:0;max-width:none;width:100%;margin:0;padding:12px;display:flex;flex-direction:column;overflow:hidden}
+body.studio-open .studio-toolbar{flex:0 0 auto;min-height:48px;margin:0 0 10px;gap:12px;flex-wrap:nowrap}
+body.studio-open .project-heading h1{max-width:50vw;font-size:21px}
+body.studio-open .studio-kicker{font-size:11px}
+body.studio-open .studio-save{width:auto;gap:12px}
+body.studio-open .studio-save .btn{min-height:44px;padding:8px 14px;min-width:0}
+body.studio-open #studio-content{flex:1;min-height:0;min-width:0;position:relative;overflow:hidden}
+body.studio-open .studio-error{flex:0 0 auto;max-height:72px;overflow:auto;padding:8px 12px;margin-bottom:8px}
+body.studio-open .studio-layout{height:100%;min-height:0;display:grid;grid-template-columns:230px minmax(0,1fr) 300px;grid-template-rows:minmax(0,1fr);gap:12px;align-items:stretch;position:relative}
+body.studio-open .camera-rail{grid-column:1;grid-row:1;min-width:0;min-height:0;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+body.studio-open .camera-rail .camera-dock.hand-camera{position:static;inset:auto;width:100%;max-width:none;height:100%;max-height:100%;margin:0;padding:0;display:flex;flex-direction:column;border:0;border-radius:0;box-shadow:none;overflow:hidden}
+body.studio-open .camera-rail .hand-camera-heading{flex:0 0 auto;display:grid;grid-template-columns:minmax(0,1fr) 44px;padding:10px;gap:8px;border-bottom:1px solid var(--line);align-items:center}
+body.studio-open .camera-rail .hand-camera-heading>div{min-width:0}
+body.studio-open .camera-rail .hand-camera-heading span{max-width:none;font-size:11px;line-height:1.5}
+body.studio-open .camera-rail .camera-toggle{grid-column:1/-1;width:100%;min-height:44px;font-size:12px!important}
+body.studio-open .camera-rail .camera-minimize{width:44px;height:44px;min-width:44px}
+body.studio-open .camera-rail .hand-camera-preview{flex:0 0 auto;position:relative;width:calc(100% - 20px);height:auto;aspect-ratio:4/3;max-height:none;margin:10px 10px 0;border-radius:8px}
+body.studio-open .camera-rail .hand-camera-preview video,body.studio-open .camera-rail .hand-camera-preview canvas{width:100%;height:100%;object-fit:contain}
+body.studio-open .hand-camera-options{flex:1;min-height:0;padding:0 10px 10px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+body.studio-open .hand-camera-options .hand-camera-settings{margin-top:4px}
+body.studio-open .hand-camera-options .hand-camera-help{font-size:11px;line-height:1.6}
+body.studio-open .hand-camera-options .hand-camera-status{font-size:11px}
+body.studio-open .room-workspace{grid-column:2;grid-row:1;min-height:0;min-width:0;display:flex;flex-direction:column;overflow:hidden}
+body.studio-open .edit-toolbar{flex:0 0 auto;min-height:58px;padding:6px 10px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;gap:6px}
+body.studio-open .tool-group{flex-shrink:0;gap:3px}
+body.studio-open .tool-button{min-height:44px;padding:7px 8px;font-size:12px!important;white-space:nowrap}
+body.studio-open .tool-history{padding-left:6px}
+body.studio-open .studio-layout .viewport{flex:1;min-height:0;height:auto;min-width:0;overflow:hidden}
+body.studio-open .selection-bar{flex:0 0 auto;min-height:54px;padding:8px 12px;gap:10px;align-items:center}
+body.studio-open .selection-bar #selection-hint{font-size:11px;line-height:1.4}
+body.studio-open .hand-view-tools{flex:0 0 auto;padding:6px 10px;flex-wrap:nowrap;justify-content:center;gap:6px;overflow-x:auto;scrollbar-width:thin}
+body.studio-open .hand-view-tools button{flex:1 0 auto;min-height:44px;padding:6px 8px;font-size:11px!important}
+body.studio-open .workspace-bottom{flex:0 0 auto;padding:5px 12px;font-size:10px;min-height:26px;flex-wrap:nowrap}
+body.studio-open .workspace-bottom p{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+body.studio-open .studio-side{grid-column:3;grid-row:1;height:100%;max-height:none;min-height:0;min-width:0;display:flex;flex-direction:column;overflow:hidden}
+body.studio-open .side-tabs{flex:0 0 auto;padding:6px;gap:4px}
+body.studio-open .side-tabs button{font-size:12px;padding:6px}
+body.studio-open .hand-scroll-tools{flex:0 0 auto;padding:5px 8px}
+body.studio-open .inspector{flex:1;min-height:0;max-height:none;overflow-y:auto;padding:12px;overscroll-behavior:contain;scrollbar-width:thin}
+body.studio-open .tools-toggle,body.studio-open .tools-close{display:none}
+body.studio-open .room-empty{max-height:100%;overflow:auto}
+
+@media(min-width:1600px){body.studio-open .studio-layout{grid-template-columns:260px minmax(0,1fr) 330px}}
+@media(max-width:1200px){
+ body.studio-open .studio-layout{grid-template-columns:190px minmax(0,1fr) 270px;gap:8px}
+ body.studio-open .studio{padding:8px}
+ body.studio-open .tool-history .tool-button span,body.studio-open .view-tools .tool-button span{display:none}
+ body.studio-open .hand-camera-heading span{display:none}
+}
+/* Tools become a drawer on smaller screens, never a second page below the room. */
+@media(max-width:980px){
+ body.studio-open .studio-layout{grid-template-columns:180px minmax(0,1fr)}
+ body.studio-open .studio-side{display:none;position:absolute;right:0;top:0;bottom:0;width:min(310px,90%);height:auto;z-index:70;box-shadow:-10px 0 28px #0004}
+ body.studio-open.tools-open .studio-side{display:flex}
+ body.studio-open .tools-toggle{display:flex;flex-shrink:0}
+ body.studio-open .tools-close{display:block;flex:0 0 auto;min-height:44px;background:var(--bg);color:var(--ink);border:0;border-bottom:1px solid var(--line);cursor:pointer}
+ body.studio-open .project-heading h1{max-width:45vw;font-size:18px}
+ body.studio-open .connected-user{max-width:130px;font-size:12px}
+ body.studio-open .studio-save #studio-status{max-width:130px;font-size:11px}
+}
+@media(max-width:600px){
+ body.studio-open #app>header{flex-basis:54px;min-height:54px;height:54px;padding:5px 8px;gap:6px}
+ body.studio-open .brand{font-size:14px;gap:5px}
+ body.studio-open .brand svg{width:24px;height:24px}
+ body.studio-open .brand small,body.studio-open .connected-user,body.studio-open .studio-kicker{display:none}
+ body.studio-open .header-actions{gap:4px}
+ body.studio-open .header-actions .text-btn{font-size:11px;padding:5px}
+ body.studio-open .studio{padding:6px}
+ body.studio-open .studio-toolbar{min-height:44px;margin-bottom:6px;gap:6px}
+ body.studio-open .project-heading{gap:5px}
+ body.studio-open .project-heading h1{font-size:16px;max-width:42vw}
+ body.studio-open .studio-save{gap:4px;flex-shrink:0}
+ body.studio-open .studio-save #studio-status{display:none}
+ body.studio-open .studio-save .btn{min-height:44px;padding:6px 9px;font-size:12px;gap:5px}
+ body.studio-open .studio-layout{grid-template-columns:minmax(0,1fr)}
+ body.studio-open .room-workspace{grid-column:1}
+ body.studio-open .camera-rail{position:absolute;left:6px;top:66px;width:144px;max-height:min(260px,55%);z-index:40;box-shadow:0 3px 16px #0004}
+ body.studio-open .camera-rail .camera-dock.hand-camera{height:min(260px,45dvh)}
+ body.studio-open .camera-rail .hand-camera-heading{padding:4px;gap:4px;grid-template-columns:minmax(0,1fr) 44px}
+ body.studio-open .camera-rail .hand-camera-heading strong{font-size:10px}
+ body.studio-open .camera-rail .hand-camera-heading span{display:none}
+ body.studio-open .camera-rail .camera-toggle{font-size:11px!important}
+ body.studio-open .camera-rail .hand-camera-preview{height:78px;aspect-ratio:auto;max-height:78px;margin:5px 5px 0;width:calc(100% - 10px)}
+ body.studio-open .hand-camera-options{padding:0 6px 6px}
+ body.studio-open .camera-rail .hand-camera.is-minimized{height:auto}
+ body.studio-open .camera-rail .hand-camera.is-minimized .hand-camera-options{display:none}
+ body.studio-open .selection-bar #selection-hint,body.studio-open .workspace-bottom{display:none}
+ body.studio-open .selection-bar{min-height:40px;padding:6px 10px}
+ body.studio-open .selection-bar strong{font-size:12px}
+ body.studio-open .hand-view-tools button{padding:5px;font-size:10px!important}
+ body.studio-open .view-tools{display:none}
+}
+@media(max-height:600px) and (min-width:601px){
+ body.studio-open #app>header{flex-basis:50px;height:50px;min-height:50px}
+ body.studio-open .studio-toolbar{min-height:44px;margin-bottom:6px}
+ body.studio-open .studio-kicker,body.studio-open .workspace-bottom,body.studio-open .selection-bar #selection-hint{display:none}
+ body.studio-open .selection-bar{min-height:38px;padding:5px 10px}
+ body.studio-open .camera-rail .hand-camera-preview{max-height:100px;aspect-ratio:auto;height:100px}
+}
+
+.restore-error:empty{display:none}.restore-room-preview{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.restore-camera{padding:14px}.restore-camera p{font-size:12px;margin-top:12px}.restore-camera-frame{margin-top:12px;aspect-ratio:4/3;background:var(--bg);border:1px solid var(--line);border-radius:8px}.restore-placeholder{height:42px;margin:12px;border:1px solid var(--line);border-radius:7px;background:var(--bg)}.restore-studio .viewport-note{white-space:normal;text-align:center}.restore-studio .studio-save>span{font-size:12px;color:var(--muted)}
+
+/* Collision feedback stays within the existing row; it never resizes the viewport. */
+body.studio-open .selection-bar #selection-hint{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.studio-open #selection-hint[data-blocked="true"]{color:var(--danger)}

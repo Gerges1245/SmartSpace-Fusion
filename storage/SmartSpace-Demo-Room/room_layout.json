@@ -1,0 +1,154 @@
+{
+  "name": "SmartSpace demo room",
+  "units": "metres",
+  "up_axis": "Y",
+  "room": {
+    "width": 5,
+    "depth": 4,
+    "height": 2.6,
+    "open_front": true,
+    "ceiling": false
+  },
+  "objects": [
+    {
+      "node": "Room_Shell",
+      "kind": "structure",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Room_Shell.glb"
+    },
+    {
+      "node": "Sofa_01",
+      "kind": "furniture",
+      "position": [
+        -1.15,
+        0,
+        -1.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Sofa_01.glb"
+    },
+    {
+      "node": "Coffee_Table_01",
+      "kind": "furniture",
+      "position": [
+        -0.9,
+        0,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Coffee_Table_01.glb"
+    },
+    {
+      "node": "Bookshelf_01",
+      "kind": "furniture",
+      "position": [
+        1.75,
+        0,
+        -1.72
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Bookshelf_01.glb"
+    },
+    {
+      "node": "Desk_01",
+      "kind": "furniture",
+      "position": [
+        1.62,
+        0,
+        0.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Desk_01.glb"
+    },
+    {
+      "node": "Chair_01",
+      "kind": "furniture",
+      "position": [
+        1.62,
+        0,
+        1.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Chair_01.glb"
+    },
+    {
+      "node": "Rug_01",
+      "kind": "furniture",
+      "position": [
+        -0.9,
+        0,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Rug_01.glb"
+    }
+  ]
+}

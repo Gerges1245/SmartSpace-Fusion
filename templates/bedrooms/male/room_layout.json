@@ -1,0 +1,151 @@
+{
+  "name": "male bedroom",
+  "units": "metres",
+  "room": {
+    "width": 5,
+    "depth": 4,
+    "height": 2.6
+  },
+  "objects": [
+    {
+      "node": "Room_Shell",
+      "kind": "structure",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Room_Shell.glb"
+    },
+    {
+      "node": "Bed_01",
+      "kind": "furniture",
+      "position": [
+        0.15,
+        0,
+        -0.86
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Bed_01.glb"
+    },
+    {
+      "node": "Wardrobe_01",
+      "kind": "furniture",
+      "position": [
+        -1.82,
+        0,
+        -1.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Wardrobe_01.glb"
+    },
+    {
+      "node": "Desk_01",
+      "kind": "furniture",
+      "position": [
+        1.57,
+        0,
+        0.66
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Desk_01.glb"
+    },
+    {
+      "node": "Chair_01",
+      "kind": "furniture",
+      "position": [
+        1.42,
+        0,
+        1.38
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Chair_01.glb"
+    },
+    {
+      "node": "Rug_01",
+      "kind": "furniture",
+      "position": [
+        -0.32,
+        0,
+        0.72
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Rug_01.glb"
+    },
+    {
+      "node": "Plant_01",
+      "kind": "furniture",
+      "position": [
+        -1.73,
+        0,
+        1.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "file": "Plant_01.glb"
+    }
+  ]
+}

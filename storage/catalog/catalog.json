@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sofa_02",
+    "name": "Tufted leather sofa",
+    "category": "Sofas",
+    "filename": "sofa_02.glb",
+    "source": "https://polyhaven.com/a/sofa_02",
+    "license": "CC0",
+    "bytes": 425656,
+    "sha256": "c07d7116f26aa52fadae87f385655404226431ff1a85550c56ef1e41f035117e"
+  },
+  {
+    "id": "sofa_03",
+    "name": "Upholstered sofa",
+    "category": "Sofas",
+    "filename": "sofa_03.glb",
+    "source": "https://polyhaven.com/a/sofa_03",
+    "license": "CC0",
+    "bytes": 818248,
+    "sha256": "a244e1fa8830705db44b289d76498800f19f12591b62f22ea10ba68683a4f9ed"
+  },
+  {
+    "id": "modern_arm_chair_01",
+    "name": "Modern lounge chair",
+    "category": "Chairs",
+    "filename": "modern_arm_chair_01.glb",
+    "source": "https://polyhaven.com/a/modern_arm_chair_01",
+    "license": "CC0",
+    "bytes": 2696296,
+    "sha256": "bf15ebfd970c291be9e289d4f5c1c4503101c0dac99bf0fbf59e90d9e87ad059"
+  },
+  {
+    "id": "dining_chair_02",
+    "name": "Wooden dining chair",
+    "category": "Chairs",
+    "filename": "dining_chair_02.glb",
+    "source": "https://polyhaven.com/a/dining_chair_02",
+    "license": "CC0",
+    "bytes": 920180,
+    "sha256": "097e97844d5ac23e6247434808dfdfd6bf74ab73587b3ff625b72031c65e37a5"
+  },
+  {
+    "id": "modern_coffee_table_01",
+    "name": "Modern coffee table",
+    "category": "Tables",
+    "filename": "modern_coffee_table_01.glb",
+    "source": "https://polyhaven.com/a/modern_coffee_table_01",
+    "license": "CC0",
+    "bytes": 1330376,
+    "sha256": "0f14416c90a1b0227ab06d7270ad1718830a17f9f47fa5cc5467f7d6eb4aa422"
+  },
+  {
+    "id": "dining_table",
+    "name": "Wooden dining table",
+    "category": "Tables",
+    "filename": "dining_table.glb",
+    "source": "https://polyhaven.com/a/dining_table",
+    "license": "CC0",
+    "bytes": 2282416,
+    "sha256": "400b1a94448ccd577483c67008f261253281a960e4d496a46f15183ab1b4ba83"
+  },
+  {
+    "id": "side_table_01",
+    "name": "Round side table",
+    "category": "Tables",
+    "filename": "side_table_01.glb",
+    "source": "https://polyhaven.com/a/side_table_01",
+    "license": "CC0",
+    "bytes": 504380,
+    "sha256": "34fd6b5903e84ae67ad6ab7ce4d1ea57de56e003905272f83e86076dc5e568a7"
+  },
+  {
+    "id": "modern_wooden_cabinet",
+    "name": "Modern wooden cabinet",
+    "category": "Storage",
+    "filename": "modern_wooden_cabinet.glb",
+    "source": "https://polyhaven.com/a/modern_wooden_cabinet",
+    "license": "CC0",
+    "bytes": 2850940,
+    "sha256": "485febe9070e126dc5faedad8b7fedfe5d885e3f4b01b5a8b419945505bdc5cf"
+  }
+]

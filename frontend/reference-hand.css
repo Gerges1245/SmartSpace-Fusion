@@ -1,0 +1,66 @@
+.hand-cursor{--rust:var(--accent);--fg-dark:var(--ink);--font-mono:monospace}
+.hand-cursor {
+  position: fixed;
+  top: -24px; left: -24px;
+  width: 48px; height: 48px;
+  z-index: 100000 !important;
+  pointer-events: none !important;
+  opacity: 0;
+  /* Position is already filtered in JS; another transition delays the visible hit point. */
+  transition: opacity .25s;
+  will-change: transform;
+}
+.hand-cursor * {
+  pointer-events: none !important;
+}
+.hand-cursor.on {
+  opacity: 1 !important;
+}
+.hand-cursor .cur-dot {
+  width: 14px; height: 14px;
+  background: var(--rust);
+  border-radius: 50%;
+  position: absolute; top: 17px; left: 17px;
+  transition: transform .18s, background .18s;
+  box-shadow: 0 0 0 4px rgba(202, 82, 55, .25);
+}
+.hand-cursor.over .cur-dot {
+  transform: scale(1.4);
+  background: var(--fg-dark);
+  box-shadow: 0 0 0 3px var(--rust);
+}
+.hand-cursor.grab .cur-dot {
+  transform: scale(1.7);
+  background: var(--rust);
+  box-shadow: 0 0 0 6px rgba(202, 82, 55, .35);
+}
+.hand-cursor svg {
+  width: 48px; height: 48px;
+  position: absolute; top: 0; left: 0;
+  transform: rotate(-90deg);
+}
+.cur-progress {
+  fill: none;
+  stroke: var(--rust);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 80ms linear;
+}
+.cur-bg { fill: none; stroke: rgba(202, 82, 55, .15); stroke-width: 3; }
+.cur-label {
+  position: absolute; top: 50px; left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font: 700 11px/1 var(--font-mono);
+  color: var(--rust);
+  text-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.g-hover {
+  outline: 2px solid var(--rust) !important;
+  outline-offset: 2px;
+}
+
+.hand-cursor[data-slot="2"]{--rust:#168a93}
+
+@media(prefers-reduced-motion:reduce){.hand-cursor{transition:opacity .15s}}

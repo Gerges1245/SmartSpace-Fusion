@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+*.db-journal
+*.db-wal
+*.db-shm
+
+# بيانات شخصية / محلية
+smartspace.db
+bluetooth_devices.json
+backups/
+bye_bye_samples.pkl
+qa-*.png

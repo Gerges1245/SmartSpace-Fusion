@@ -1,0 +1,4 @@
+[
+  {"name": "Nour", "gender": "female", "addresses": ["AA:BB:CC:11:22:33", "AA:BB:CC:11:22:34"]},
+  {"name": "Adam", "gender": "male", "addresses": ["AA:BB:CC:11:22:35"]}
+]
